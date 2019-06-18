@@ -1,0 +1,10 @@
+<div>
+  <h1>login</h1>
+  <mat-form-field class='login-container'>
+    <input matInput placeholder='Usuario' [(ngModel)]='username'>
+  </mat-form-field>
+  <mat-form-field class='login-container'>
+    <input matInput class='input-login'  type='password' placeholder='Contraseña' [(ngModel)]='password'>
+  </mat-form-field>
+  <button mat-raised-button color='primary' (click)='login()'>Primary</button>
+</div>
