@@ -6,5 +6,5 @@
   <mat-form-field class='login-container'>
     <input matInput class='input-login'  type='password' placeholder='Contraseña' formControlName="password">
   </mat-form-field>
-  <button mat-raised-button color='primary' (click)='login()' [disabled]="formlogin.invalid">Ingresar</button>
+  <button mat-raised-button color='primary' (click)='login()' [disabled]="formlogin.invalid || loading">Ingresar</button>
 </div>

@@ -15,6 +15,6 @@ export class ApiService {
       email:username,
       password:pwd
     }
-    return this.http.post<LoginResponse>('https://reqres.in/api/login',body);
+    return this.http.post<LoginResponse>('https://reqres.in/api/login?delay=3',body);
   }
 }
