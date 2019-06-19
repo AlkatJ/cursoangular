@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
               private _apiservice: ApiService,
               private _formbuilder: FormBuilder) {
     this.formlogin =this._formbuilder.group({
-      username:['',Validators.required],
+      username:['',[Validators.required, Validators.email]],
       password:['',Validators.required]
     });
                }
