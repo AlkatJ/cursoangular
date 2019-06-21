@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { LoginResponse } from '../model/login.response';
+import { ColorResponse } from '../model/colors.response';
 
 @Injectable({
   providedIn: 'root'
@@ -17,4 +18,8 @@ export class ApiService {
     }
     return this.http.post<LoginResponse>('https://reqres.in/api/login?delay=3',body);
   }
+  getColors():Observable<ColorResponse>{
+    return this.http.get<ColorResponse>('https://reqres.in/api/unknown?delay=3');
+  }
+
 }

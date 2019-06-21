@@ -1,3 +1,5 @@
-<mat-toolbar color="primary">My App</mat-toolbar>
+<mat-toolbar color="primary">My App
+  <button mat-button (click)="logout()" color="Danger" *ngIf="userLogged()">Salir</button>
+</mat-toolbar>
 <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
 <router-outlet></router-outlet>

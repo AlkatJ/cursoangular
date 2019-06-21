@@ -13,11 +13,14 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { TableColorsComponent } from './table-colors/table-colors.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    TableColorsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatSnackBarModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
